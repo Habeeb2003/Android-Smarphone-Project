@@ -1,0 +1,608 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: choco Cooky;
+}
+body #righty {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+body #righty main {
+  min-width: 260px;
+  max-width: 260px !important;
+  padding: 0 !important;
+  height: 80vh;
+  border: 3px solid black;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+body #righty main #topSect {
+  width: 100%;
+  height: 3%;
+}
+body #righty main #topSect #ffDiv {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+body #righty main #topSect #ffDiv #fDiv {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 100%;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body #righty main #screenSect {
+  width: 100%;
+  height: 93%;
+}
+body #righty main #screenSect #phoneApp {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  display: none;
+}
+body #righty main #screenSect #phoneApp #norm {
+  width: 100%;
+  height: 100%;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue {
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  display: none;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section {
+  width: 100%;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section #callerInfo {
+  margin-bottom: 20px;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section #callerInfo #callerContactName {
+  margin-bottom: 0px;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section #callerInfo #callerNo {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section #callerInfo #outgoingCountry {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section #callerInfo #callStatus {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section #buttons, body #righty main #screenSect #phoneApp #norm #callDialogue section .buttons2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section #buttons button, body #righty main #screenSect #phoneApp #norm #callDialogue section .buttons2 button {
+  min-width: 25% !important;
+  padding: 2px;
+  color: white;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section #buttons button p, body #righty main #screenSect #phoneApp #norm #callDialogue section .buttons2 button p {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+body #righty main #screenSect #phoneApp #norm #callDialogue section #endBtnDiv #endBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: red;
+  color: white;
+  border: transparent;
+  outline: none;
+}
+body #righty main #screenSect #phoneApp #norm #dialogueDiv {
+  position: absolute;
+  width: 254px;
+  height: 73.5%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+body #righty main #screenSect #phoneApp #norm #dialogueDiv #infoDiv {
+  background-color: white;
+  width: 75%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body #righty main #screenSect #phoneApp #norm #dialogueDiv #infoDiv #loaderDiv {
+  border: 8px solid #f3f3f3;
+  /* Light grey */
+  border-top: 8px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body #righty main #screenSect #phoneApp #norm #dialogueDiv #infoDiv #textDiv p {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+body #righty main #screenSect #phoneApp #norm #dialogueDiv #infoResultDiv {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 75%;
+  height: auto;
+  padding: 7px;
+  color: white;
+  font-size: 14px;
+  display: none;
+}
+body #righty main #screenSect #phoneApp #norm #topDiv {
+  height: 10%;
+}
+body #righty main #screenSect #phoneApp #norm #topDiv div {
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+body #righty main #screenSect #phoneApp #norm #topDiv div input {
+  height: 25px;
+  width: 80%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: lightgrey;
+  padding-left: 10px;
+}
+body #righty main #screenSect #phoneApp #norm #topDiv div .dot3 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv {
+  height: 90%;
+  overflow: scroll;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #tabsDiv #tabs {
+  position: absolute;
+  top: 79%;
+  max-width: 254px;
+  min-width: 254px;
+  padding: 5px;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #tabsDiv #tabs div {
+  display: flex;
+  justify-content: space-evenly;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #tabsDiv #tabs div button {
+  padding: 5px;
+  line-height: 10px;
+  width: 33%;
+  border-radius: 20px;
+  border: transparent;
+  outline: none;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #tabsDiv #tabs div button i {
+  font-size: 15px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #tabsDiv #tabs div button span {
+  font-size: 15px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab {
+  display: none;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #showKeypad {
+  position: absolute;
+  top: 70%;
+  width: 254px;
+  text-align: center;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #showKeypad .showKeypad {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 5px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad {
+  position: absolute;
+  top: 46.5%;
+  max-width: 254px;
+  min-width: 254px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  display: none;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad #keypadInputDiv {
+  display: flex;
+  justify-content: space-around;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad #keypadInputDiv input {
+  width: 90%;
+  border: none;
+  outline: none;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad #keypadInputDiv .delBtn {
+  outline: none;
+  border: none;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad div {
+  display: flex;
+  justify-content: space-evenly;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad div button {
+  width: 30%;
+  height: 40px;
+  border: transparent;
+  outline: none;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad #callDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad #callDiv #cDiv {
+  width: 70%;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad #callDiv #cDiv .bb {
+  width: 30%;
+  height: 45px;
+  border-radius: 30px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad #callDiv #dDiv {
+  width: 20%;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #keypad #callDiv #dDiv button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 5px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #media {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #media #center {
+  width: 40%;
+  line-height: 5px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #media #center h6 {
+  font-size: 15px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #media #center p {
+  font-size: 13px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #media #left div span {
+  font-size: 12px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #addContact {
+  position: absolute;
+  top: 77.5%;
+  left: 22.5%;
+  width: max-content;
+  text-align: center;
+  z-index: 10;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #addContact button {
+  width: 45px;
+  height: 45px;
+  border-radius: 23px;
+  padding: 5px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #tabsDiv #tabs {
+  position: absolute;
+  top: 79%;
+  width: 25%;
+  padding: 5px;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  z-index: 8;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #tabsDiv #tabs div {
+  display: flex;
+  justify-content: space-between;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #tabsDiv #tabs div button {
+  padding: 5px;
+  line-height: 10px;
+  width: 33%;
+  border-radius: 20px;
+  border: transparent;
+  outline: none;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #tabsDiv #tabs div button i {
+  font-size: 15px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #tabsDiv #tabs div button span {
+  font-size: 15px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #myContactList #aContactCon {
+  margin-left: 25%;
+  border-bottom: 2px solid lightgrey;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #myContactList #aContact {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #myContactList #aContact #icon {
+  background-color: indianred;
+  width: 35px;
+  height: 35px;
+  border-radius: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+body #righty main #screenSect #phoneApp #norm #middleDiv #ContactsTab #myContactList #aContact #name h6 {
+  margin-bottom: 0px;
+}
+body #righty main #screenSect #phoneApp #addConDiv {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+body #righty main #screenSect #phoneApp #addConDiv #topCon {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #righty main #screenSect #phoneApp #addConDiv #topCon #backBtnDiv button {
+  border: 0px;
+  outline: none;
+  background-color: white;
+  color: #1730a0;
+}
+body #righty main #screenSect #phoneApp #addConDiv #topCon #titleDiv h6 {
+  margin-bottom: 0px;
+}
+body #righty main #screenSect #phoneApp #addConDiv #topCon #saveContactDiv button {
+  border: 0px;
+  outline: none;
+  background-color: white;
+  color: #1730a0;
+  font-weight: bold;
+}
+body #righty main #screenSect #phoneApp #addConDiv #picCon {
+  background-color: deepskyblue;
+  width: 100%;
+  height: 30%;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon {
+  width: 100%;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #saveToDiv {
+  display: flex;
+  width: 100%;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #saveToDiv #iDiv {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #saveToDiv #iDiv i {
+  width: 30%;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #saveToDiv #sDiv {
+  width: 80%;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #saveToDiv #sDiv select {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 0px;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNameCon, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNoCon, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #additional, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #none, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeEmailCon {
+  display: flex;
+  width: 100% !important;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNameCon #iDiv, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNoCon #iDiv, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #additional #iDiv, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #none #iDiv, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeEmailCon #iDiv {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNameCon #iDiv i, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNoCon #iDiv i, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #additional #iDiv i, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #none #iDiv i, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeEmailCon #iDiv i {
+  width: 30%;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNameCon #inDiv, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNoCon #inDiv, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #additional #inDiv, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #none #inDiv, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeEmailCon #inDiv {
+  width: 80%;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNameCon #inDiv input, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNoCon #inDiv input, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #additional #inDiv input, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #none #inDiv input, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeEmailCon #inDiv input {
+  width: 75%;
+  height: 40px;
+  border: 0px;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  font-size: 15px;
+}
+body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNameCon #inDiv input:focus, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeNoCon #inDiv input:focus, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #additional #inDiv input:focus, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #none #inDiv input:focus, body #righty main #screenSect #phoneApp #addConDiv #neededInfoCon #typeEmailCon #inDiv input:focus {
+  border-bottom: 2px solid blue;
+}
+body #righty main #screenSect #scrollApps {
+  height: 87%;
+}
+body #righty main #screenSect #scrollApps #group div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+body #righty main #screenSect #scrollApps #group div button {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+  border: transparent;
+  outline: none;
+  background-color: transparent;
+}
+body #righty main #screenSect #bottomApps {
+  width: 100%;
+  height: 13%;
+}
+body #righty main #screenSect #bottomApps div {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #righty main #screenSect #bottomApps div button {
+  border-radius: 10px;
+  border: transparent;
+  outline: none;
+  padding: 0px;
+}
+body #righty main #bottomSect {
+  width: 100%;
+  height: 5%;
+}
+body #righty main #bottomSect div {
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+body #righty main #bottomSect div button {
+  border: transparent;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+body #lefty {
+  width: 50%;
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body #lefty #vouGenMain {
+  background-color: aqua;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+body #lefty #vouGenMain #vouGenSect {
+  width: 100%;
+}
+body #lefty #vouGenMain #vouGenSect select {
+  width: 80%;
+}
+body #lefty #vouGenMain #vouGenSect .genPin {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+body #lefty #vouGenMain #vouGenSect .genPin input {
+  width: 80%;
+}
+body #lefty #vouGenMain #vouGenSect .genPin button {
+  width: 18%;
+}
+body #lefty #vouMain table, body #lefty #vouMain th, body #lefty #vouMain td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+body #lefty #vouMain table {
+  margin-left: auto;
+  margin-right: auto;
+}
+body #lefty #vouMain table th {
+  min-width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+body #lefty #contactSaveMain {
+  width: 70%;
+}
+body #lefty #contactSaveMain section div {
+  display: flex;
+  justify-content: space-around;
+}
+body #lefty #contactsMain table, body #lefty #contactsMain th, body #lefty #contactsMain td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+body #lefty #contactsMain table {
+  margin-left: auto;
+  margin-right: auto;
+}
+body #lefty #contactsMain table th {
+  min-width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.skeypad {
+  animation: showKeypad 1s;
+}
+
+@keyframes showKeypad {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.hkeypad {
+  animation: hideKeypad 1s;
+}
+
+@keyframes hideKeypad {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+/*# sourceMappingURL=phoneTest.css.map */
