@@ -376,6 +376,20 @@
 </body>
 </html>
 
+<script>
+    // const val = "ioewoiewjojew\nuweujeewjiewfji\nuieuiuieuidr\n"
+    // document.getElementById("myp").innerHTML = val
+    // console.log(val);
+
+    fetch("https://api.sms-activate.org/stubs/handler_api.php?api_key=1c203ecBed23e663Bc270B8723d48150&action=getCountries", { method: "GET" })
+    .then((res) => {
+        console.log(res);
+        res.json()
+    }).then((res) => {
+        console.log(res);
+    })
+</script>
+
 <script src="../JavaScript/phoneTest.js"></script>
 <script src="../JavaScript/phoneTestVoucher.js"></script>
 <script src="../JavaScript/phoneTestCalling.js"></script>
